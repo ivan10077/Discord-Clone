@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Second Overlay</title>
+    <style>
+        /* CSS for the overlay div */
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black; /* Example: black background */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            z-index: 9999; /* Ensures it stays on top */
+        }
+    </style>
+</head>
+<body>
+    <!-- The overlay div -->
+    <div id="overlay">
+        Welcome to my website! <!-- Text or a loader -->
+    </div>
+
+    <!-- Your main content -->
+    <h1>Main Website Content</h1>
+    <p>This is the rest of your website.</p>
+
+    <script>
+        // JavaScript to hide the overlay after 5 seconds
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                const overlay = document.getElementById("overlay");
+                overlay.style.display = "none";
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+</body>
+</html>

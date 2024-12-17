@@ -1,0 +1,231 @@
+nav {
+    position: relative;
+    overflow: scroll;
+    width: 72px;
+    background-color: #1e1f22;
+    padding-top: 12px;
+    padding-bottom: 56px;
+}
+
+/* Hide the scrollbar for webkit browsers */
+
+nav::-webkit-scrollbar {
+    display: none;  
+}
+
+.hover-server::-webkit-scrollbar {
+    display: none;  
+}
+
+/* Discord Logo at Top */
+
+.discord-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 72px;
+    text-align: center;
+    z-index: 79;
+}
+
+.discord-logo button {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 24px;
+    border: none;
+    padding-top: 4px;
+
+    background-color: #313338;
+    transition: background-color 0.15s, border-radius 0.15s ease-in-out;
+}
+
+.dms-status {
+    position: absolute;
+    transition: height 0.15s, opacity 0.15s ease-in-out;
+    pointer-events: none;
+
+    background-color: #ffffffe1;
+    opacity: 0;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+
+    margin-left: -72px;
+}
+
+/*Server Seperator*/
+
+.server-seperator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+
+    color: #35363c;
+    font-size: 35px;
+    width: 2rem;
+    height: 1.5px;
+    margin-top: 8px;
+    margin-inline: auto;
+    margin-bottom: 8px;
+    text-align: center;
+    background: #35363c;
+}
+
+/* Selected Server CSS */
+
+.selected-server-logo {
+    width: 48px;
+    border-radius: 16px;
+}
+
+.selected-server-status {
+    position: absolute;
+    height: 39.8px;
+    width: 48px;
+    border-radius: 4px;
+    margin-left: -112px;
+    pointer-events: none;
+}
+
+/* Common CSS for every Server */
+
+.server-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    width: 72px;
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.server-logo {
+    width: 48px;
+    border-radius: 24px;
+    transition: border-radius 0.15s ease-in-out;
+}
+
+.active-server-status {
+    position: absolute;
+    transition: height 0.15s;
+    pointer-events: none;
+
+    background-color: #ffffffe1;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+
+    margin-left: -72px;
+    z-index: 15;
+}
+
+.pings {
+    position: absolute;
+    text-align: center;
+    pointer-events: none;
+
+    bottom: 0;
+    right: 0;
+    height: 20x;
+    padding-top: 1.2px;
+    padding-bottom: 1.2px;
+    padding: 1.2px 4.5px 1.2px 4.5px;
+    margin-bottom: -3.5px;
+    margin-right: 8px;
+
+    border-radius: 12px;
+    border: 4px solid #1e1f22;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 10.5px;
+
+    background-color: #f83f43;
+    color: white;
+}
+
+.hover-server {
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+
+    position: fixed;
+    top: auto; /* Update dynamically if needed */
+    left: auto; /* Update dynamically if needed */
+    background-color: rgb(31, 31, 31);
+    padding: 10px 12px 10px 12px;
+    border-radius: 5px;
+
+    left: 5.2rem;
+    z-index: 69;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+.hover-server-arrow {
+    position: absolute;
+    pointer-events: none;
+    left: -9px;
+}
+
+.hover-server-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+.hover-server-name {
+    color: rgba(255, 255, 255, 0.850);
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Navigation Bottom Discord Feature*/
+
+.extra-server-logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #313338;
+    transition: background-color 0.15s, border-radius 0.15s ease-in-out;
+    z-index: 2;
+}
+
+.logo-green {
+    position: absolute;
+    transition: z-index 0.15s ease-in-out;
+    z-index: 2;
+}
+
+.logo-white {
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-bottom {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 56px;
+    width: 72px;
+    background-color: #1e1f22;
+    box-shadow: 0 -4px 5px #1e1f22;
+    z-index: 99;
+    overflow: hidden;
+}

@@ -1,0 +1,53 @@
+.hover-server-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+
+    width: max-content;
+    height: 20px;
+    padding: 8px 12px 8px 10px;
+    margin-bottom: 5px;
+}
+
+
+.hover-server-name img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.hover-server-name p {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 450;
+}
+
+.arrow-server-name {
+    position: absolute;
+    left: -11px;
+    color: black;
+    font-size: 30px;
+}
+
+.hover-server-name-discord {
+    display: flex;
+    flex-direction: column;
+    z-index: 500;
+    left: 80px;
+    top: 18px;
+    z-index: -100000;
+    pointer-events: none;
+}
+
+.hover-server-name-html {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 500;
+    left: 80px;
+    top: 85px;
+}

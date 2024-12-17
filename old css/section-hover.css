@@ -1,0 +1,76 @@
+.section-header:hover {
+    cursor: pointer;
+}
+
+.custom-channel-box:hover {
+    cursor: pointer;
+    background-color: #35373c;
+    color: #d8dbde;
+}
+
+.channel-box:hover {
+    cursor: pointer;
+    background-color: #35373c;
+    color: #d8dbde;
+}
+
+.channel-box:hover .invite-to-server-icon {
+    opacity: 1;
+}
+
+.channel-box:hover .two-new {
+    opacity: 0;
+}
+
+.channel-box:hover .joined-vc-users {
+    opacity: 0;
+}
+
+.channel-box:hover .maximum-vc-users {
+    opacity: 0;
+}
+
+.channel-box:hover .open-chat-icon {
+    opacity: 1;
+}
+
+.selected-channel-box {
+    cursor: pointer;
+}
+
+.category-box:hover div {
+    color: #d1d1d1;
+    cursor: pointer;
+}
+
+.profile-status:hover {
+    cursor: default;
+    background-color: #44464d;
+}
+.current-user-profile {
+    cursor: pointer;
+}
+.evugaming-profile-logo {
+    cursor: pointer;
+}
+.do-not-disturb-icon {
+    cursor: pointer;
+}
+.current-user-menu {
+    cursor: pointer;
+}
+
+.microphone-button:hover {
+    background-color: #44464d;
+    cursor: pointer;
+}
+
+.sound-button:hover {
+    cursor: pointer;
+    background-color: #44464d;
+}
+
+.settings-button:hover {
+    cursor: pointer;
+    background-color: #44464d;
+}

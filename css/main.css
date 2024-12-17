@@ -1,0 +1,344 @@
+main {
+    display: grid;
+    grid-template:auto 1fr / 1fr auto;
+    flex:1;
+    background-color: #313338;
+    overflow: hidden;
+}
+
+/* Main Header CSS*/
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #313338;
+    border-bottom: 1px solid black;
+    grid-column:span 2;
+    height: 32px;
+    padding: 8px;
+    z-index: 59;
+}
+
+.main-header-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.hashtag-icon {
+    min-height: 24px;
+    min-width: 24px;
+    margin: 0 8px 0 8px;
+    pointer-events: none;
+}
+
+.main-channel-text {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+    color: #dbdee1;
+    pointer-events: none;
+}
+
+.main-header-left-divider {
+    color: #3e4047;
+    font-size: 26px;
+    margin: 0 8px 0 12px;
+    pointer-events: none;
+}
+
+.channel-description {
+    font-family: "Inter";
+    font-size: 13px;
+    font-weight: 500;
+    color: #b5bac1;
+    flex: 1;
+    padding-left: 5px;
+    white-space: nowrap;
+    flex-shrink: 2;
+}
+
+.main-header-right {
+    display: flex;
+    align-items: center;
+    background-color: #313338;
+}
+
+.main-header-right p {
+    color: #b5bac1;
+    margin-right: 5px;
+    font-family: "Inter";
+    font-size: 13px;
+    pointer-events: none;
+}
+
+.main-header-right svg {
+    margin: 0 7px 0 7px;
+}
+
+.main-header-right input {
+    color: rgba(255, 255, 255, 0.712);
+    border: none;
+    border-radius: 4px;
+    background-color: #1e1f22;
+    width: 144px;
+    padding: 4.5px 0 4.5px 0;
+    margin: 0 9px 0 9px;
+    outline: 0;
+    transition: width 0.20s;
+    padding-left: 6px;
+}
+
+.main-header-right input::placeholder {
+    font-family: "Inter";
+    font-size: 13px;
+    color: #949b98;
+    white-space: nowrap;
+}
+
+.main-header-right input:focus {
+    width: 250px;
+}
+
+
+/* Main Message CSS*/
+
+.main-messages {
+    display: flex;
+    flex-direction: column;
+    background-color: #313338;
+    min-width: 0;
+    padding-bottom: 90px;
+    overflow-y: scroll;
+}
+
+.main-messages::-webkit-scrollbar {
+    display: none;  
+}
+.main-users::-webkit-scrollbar {
+    display: none;  
+}
+
+/*Message Wrapper CSS*/
+
+.messages-wrapper {
+    display: flex;
+    min-width: 0;
+}
+
+.message-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    position: relative;
+
+    background-color: #313338;
+    width: 100%;
+
+    padding: 2px 48px 2px 16px;
+    margin-top: 17px;
+}
+
+.message-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 14px;
+}
+
+.message-texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-tags {
+    display: flex;
+}
+.message-username {
+    font-family: "Inter";
+    font-size: 14.8px;
+    font-weight: 400;
+    margin-right: 4px;
+    color: #3cce53;
+}
+.message-role img {
+    width: 17px;
+    height: 20px;
+    margin-right: 4px;
+    margin-top: 1px;
+}
+.message-time {
+    font-family: "Lato";
+    font-size: 11px;
+    font-weight: 500;
+    color: #939aa3;
+    margin-top: 4px;
+    pointer-events: none;
+}
+
+.message-content {
+    font-family: "Inter";
+    font-size: 14px;
+    color: #dbdee1;
+    margin-top: -3px;
+    line-height: 1.5;
+}
+
+/*Message Nav CSS*/
+.message-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 240px;
+    left: 312px;
+
+    height: 65px;
+    min-width: 0px;
+
+    padding: 0 16px 0 16px;
+    background-color: #313338; /*#313338*/
+    z-index: 49;
+}
+
+.message-nav-wrap {
+    display: flex;
+    height: auto;   
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.chatting {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+
+    background-color: #383a40;
+    border-radius: 8px;
+}
+
+.media-icon {
+    padding: 10px 16px 10px 16px;
+    align-self: flex-start;
+}
+
+.chat-input {
+    padding: 11px 10px 11px 0;
+    background-color: #383a40;
+    border: none;
+    outline: 0;
+    flex: 1;
+    font-family: "Inter";
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.795);
+
+    resize: none; 
+    overflow: hidden; 
+    line-height: 1.5; /* Set a predictable line height */
+    
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 44px; 
+    overflow: hidden;
+}
+
+.chatting img {
+    margin: 4px 5px 0 5px;
+    height: 36px;
+    align-self: flex-start;
+}
+
+.search-apps {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+
+    margin-left: 8px;
+    margin-bottom: 2px;
+}
+
+.search-apps button {
+    border: none;
+    background-color: #383a40;
+    border-radius: 8px;
+    height: 45px;
+    width: 44px;
+    padding: 5px 0 0 0;
+}
+
+/* Main User CSS*/
+
+.main-users {
+    display: flex;
+    flex-direction: column;
+
+    width: 220px;
+    background-color: #2b2d31;
+    z-index: 169;
+    padding: 0 10px 12px 10px;
+    overflow-y: scroll;
+}
+
+.main-user-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    border-radius: 4px;
+
+    padding: 6px 8px 6px 8px;
+    margin-top: 2px;
+    transition: background-color 0.15s;
+}
+
+.main-user-container img {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.main-user-container p {
+    flex: 1;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 500;
+    color: #3cd44e;
+    margin: 0 0 0 10px;
+}
+
+.online-status {
+    position: absolute;
+    bottom: 4px;
+    right: 178px;
+    background-color: #35373c;
+    width: 13px;
+    height: 13px;
+    border-radius: 6px;
+}
+
+.online-status img {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 3.5px;
+    margin-left: 1.2px;
+}
+
+.user-role-container {
+    display: flex;
+
+    font-family: "Inter";
+    color: #949ba4;
+    font-size: 11.5px;
+    font-weight: 550;
+
+    padding: 24px 8px 0 6px;
+    pointer-events: none;
+}
+
+.user-role-container img {
+    margin-right: 6px;
+    margin-top: -2px;
+    margin-left: 2px;
+}

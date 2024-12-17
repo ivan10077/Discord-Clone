@@ -1,0 +1,49 @@
+.discord-logo button:hover {
+    background-color: #5865F2;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.discord-logo button:hover + nav {
+    height: 20px;
+}
+
+.discord-logo:hover .hover-server-name {
+    opacity: 1;
+}
+
+.custom-server-logo {
+    cursor: pointer;
+}
+
+.server-logo-container:hover .hover-server-name {
+    opacity: 1;
+}
+
+.server-logo:hover {
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+
+.server-logo:hover + div {
+    height: 20px;
+}
+
+.server-logo:hover + nav {
+    z-index: 400;
+}
+
+.extra-server-logo:hover {
+    border-radius: 16px;
+    background-color: #23a55a;
+    cursor: pointer;
+}
+
+.extra-server-logo:hover .logo-green {
+    z-index: 0;
+}
+
+.discord-logo:hover .hover-server-name-discord {
+    opacity: 1;
+}

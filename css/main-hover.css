@@ -1,0 +1,27 @@
+.channel-description, 
+.main-header-right svg, 
+.message-container img, 
+.message-username, 
+.message-role img, 
+.media-icon, 
+.chatting img, 
+.search-apps button, 
+.main-user-container:hover {
+    cursor: pointer;
+}
+
+.message-container:hover {
+    background-color: #2e3035;
+}
+
+.message-username:hover {
+    text-decoration: underline;
+}
+
+.media-icon:hover {
+    fill: #dbdee1;
+}
+
+.main-user-container:hover {
+    background-color: #35373c;
+}

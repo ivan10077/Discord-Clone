@@ -1,0 +1,11 @@
+.navigation {
+    display: flex;
+    flex-direction: column; 
+    width: 10px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+}
